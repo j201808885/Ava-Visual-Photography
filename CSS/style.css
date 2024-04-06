@@ -34,7 +34,7 @@ header {
   
   
   /* Show or hide the navigation links depending on whether the Nithiyaphoto menu checkbox is checked or not */
-  input[id="Nithiyaphoto_checkbox"]:not(:checked) + nav {
+  input[id="Nithiyaphotographer-checkbox"]:not(:checked) + nav {
     display: none;
   }
   
@@ -99,7 +99,7 @@ footer {
         }
   
         /* Show the navigation links... even if the Nithiyaphoto menu checkbox is not selected (menu open) */
-        input[id="Nithiyphoto_checkbox"]:not(:checked) + nav {
+        input[id="Nithiyaphotographer-checkbox"]:not(:checked) + nav {
           display:none;
         }
   
