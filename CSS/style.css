@@ -3,8 +3,8 @@
 }
 
 body {
-	background: #4B3C35;
-	font-family: Arial, Helvetica, sans-serif;
+	background: #040404;
+	forced-color-adjust: Arial, Helvetica, sans-serif;
 	margin: 0;
 }
 
@@ -12,17 +12,17 @@ body {
 
 /* Style the header which contains the navigation links */
 header {
-    background-color: #4B3C35;
+    background-color: #6f6d6c;
     overflow: hidden;
   }
   
-  /* Hide the checkbox which we use for the hamburger menu functionality */
-  #hamburger_checkbox {
+  /* Hide the checkbox which we use for the Nithiyaphoto menu functionality */
+  #Nithiyaphotographer-checkbox {
     display: none;
   }
   
-  /* Style the image we use as a label for the hamburger menu checkbox */
-  #hamburger_image {
+  /* Style the image we use as a label for the Nithiyaphoto menu checkbox */
+  #Nithiyaphoto_image {
     background-color: white;
     display: block;
     margin-bottom: 20px;
@@ -33,14 +33,14 @@ header {
   }
   
   
-  /* Show or hide the navigation links depending on whether the hamburger menu checkbox is checked or not */
-  input[id="hamburger_checkbox"]:not(:checked) + nav {
+  /* Show or hide the navigation links depending on whether the Nithiyaphoto menu checkbox is checked or not */
+  input[id="Nithiyaphotographer-checkbox"]:not(:checked) + nav {
     display: none;
   }
   
   /* Style the heading */
   h1 {
-    color: #E3DFDE;
+    color: #f9fcf8;
     float: left;
     padding: 0 20px;
     width: 100%;
@@ -61,27 +61,27 @@ header {
   
   /* Change the color of links on hover using mouse */
   nav a:hover {
-    background-color: #E3DFDE;
-    color: #4B3C35;
+    background-color: #fcfbfb;
+    color: #0a4180;
   }
   
   /* Change the color of links on focus using tab key */
   nav a:focus {
     background-color: white;
-    color: black;
+    color: rgb(204, 7, 7);
     outline: none;
   }
   
   /* Change the color of the active/current link */
   .active_nav {
-    background-color: #87604E;
-    color: white;
+    background-color: #efeaf5;
+    color: rgb(117, 114, 114);
   }
 
   
 footer {
-	background: #4B3C35;
-  color: #E3DFDE;
+	background: #080808;
+  color: #f7f0f5;
 	padding: 32px;
 	text-align: center;
 	width: 100%;
@@ -90,17 +90,20 @@ footer {
    /* For desktop: */
   @media only screen and (min-width: 768px) {
   
-        /* Hide the hamburger menu image we use as a label for the hamburger menu checkbox */
-        #hamburger_image {
+        /* Hide the hamburger menu image we use as a label for Nithiyaphoto menu checkbox */
+        #Nithiya_image {
           display: none;
         }
-  
-        /* Show the navigation links... even if the hamburger menu checkbox is not selected (menu open) */
-        input[id="hamburger_checkbox"]:not(:checked) + nav {
-          display:block
+        #Nithiyaphotographer-checkbox{
+          display:none;
         }
   
-        /* Style the Knitters heading */
+        /* Show the navigation links... even if the Nithiyaphoto menu checkbox is not selected (menu open) */
+        input[id="Nithiyaphotographer-checkbox"]:not(:checked) + nav {
+          display:none;
+        }
+  
+        /* Style the Photoghaphy heading */
         h1 {
           text-align: left;
           width: 390px;
