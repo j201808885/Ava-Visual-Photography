@@ -4,7 +4,7 @@
 
 body {
 	background: #4B3C35;
-	forced-color-adjust: Arial, Helvetica, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 	margin: 0;
 }
 
@@ -16,13 +16,13 @@ header {
     overflow: hidden;
   }
   
-  /* Hide the checkbox which we use for the Nithiyaphoto menu functionality */
-  #Nithiyaphotographer-checkbox {
+  /* Hide the checkbox which we use for the hamburger menu functionality */
+  #hamburger_checkbox {
     display: none;
   }
   
-  /* Style the image we use as a label for the Nithiyaphoto menu checkbox */
-    #hamburger_image {
+  /* Style the image we use as a label for the hamburger menu checkbox */
+  #hamburger_image {
     background-color: white;
     display: block;
     margin-bottom: 20px;
@@ -33,14 +33,14 @@ header {
   }
   
   
-  /* Show or hide the navigation links depending on whether the Nithiyaphoto menu checkbox is checked or not */
-  input[id="Nithiyaphotographer-checkbox"]:not(:checked) + nav {
+  /* Show or hide the navigation links depending on whether the hamburger menu checkbox is checked or not */
+  input[id="hamburger_checkbox"]:not(:checked) + nav {
     display: none;
   }
   
   /* Style the heading */
   h1 {
-color: #E3DFDE;
+    color: #E3DFDE;
     float: left;
     padding: 0 20px;
     width: 100%;
@@ -68,26 +68,26 @@ color: #E3DFDE;
   /* Change the color of links on focus using tab key */
   nav a:focus {
     background-color: white;
-    color: rgb(204, 7, 7);
+    color: black;
     outline: none;
   }
   
   /* Change the color of the active/current link */
   .active_nav {
     background-color: #87604E;
-    color: rgb(117, 114, 114);
+    color: white;
   }
 
   
 footer {
 	background: #4B3C35;
-    color: #E3DFDE;
+  color: #E3DFDE;
 	padding: 32px;
 	text-align: center;
 	width: 100%;
 }
   
- /* For desktop: */
+   /* For desktop: */
   @media only screen and (min-width: 768px) {
   
         /* Hide the hamburger menu image we use as a label for the hamburger menu checkbox */
@@ -99,5 +99,22 @@ footer {
         input[id="hamburger_checkbox"]:not(:checked) + nav {
           display:block
         }
+  
+        /* Style the Knitters heading */
+        h1 {
+          text-align: left;
+          width: 390px;
+        }
+  
+        /* Style the navigation bar */
+        nav {
+          float: right;
+        }
+  
+        /* Style the links inside the navigation bar */
+        nav a {
+          width: auto;
+        }
+  }
   
   
