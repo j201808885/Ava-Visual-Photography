@@ -23,14 +23,14 @@ aside a {
 
 /* Change the color of aside links on hover using mouse */
 aside a:hover {
-	background-color: #4B3C35;
+	background-color: #979594;
 	color: white;
 }
 
 
 /* Change the color of aside links on focus using tab key */
 aside a:focus {
-  background-color: #4B3C35;
+  background-color: #cac5c3;
   color: #E3DFDE;
   outline: none;
 }
